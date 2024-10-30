@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    color: #fff;
+}
+
+body{
+    background-color: black;
+}
+
+header {
+    height: 80px;
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .5s;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+li:hover {
+    color: rgb(126, 107, 2);
+}
+
+.socialmidia{
+    width: 40px;
+}
+
+i {
+    transition: .5s;
+}
+
+i:hover{
+    color: rgb(126, 107, 2);
+}
+
+#imglogo {
+    width: 78px;
+    height: auto;
+}
+
+#frasesloja {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    background-color: black;
+    height: 60px;
+    margin-top: 30px;
+    border: 1px solid white;
+}
+
+#taphouse{
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#loja{
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagemfundo{
+    width: 100%;
+    height: 180px;
+    background-image: url(./assets/fuundodiv.jpg);
+    margin-top: 30px;
+}
+
+.produtos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cards-content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 10px;
+    color: rgba(243, 242, 242, 0.836);
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+.cervejas {
+    background-image: url(./assets/cervejas.jpg);
+}
+
+.tabacaria {
+    background-image: url('https://i.pinimg.com/736x/f9/0a/80/f90a806686cab3e7bd5269ec8173fc5a--mata-cigars.jpg');
+}
+
+.cafe {
+    background-image: url(./assets/cafes.jpg);
+}
+
+.taphouse {
+    background-image: url(./assets/taphouse.jpg);
+}
+
+.insumos {
+    background-image: url('https://www.yakimachief.com/media/magefan_blog/HopWireBlog_SmallPackinEU23.jpg');
+}
+
+.comidas {
+    background-image: url('./assets/imgcomidinhas.jpg');
+}
+
+.boxdois{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.blocodois{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+
+.fotodois{
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/quemsomosnos.jpg);
+    transition: 1s;
+    border-radius: 50%;
+}
+
+.fotodois:hover{
+    transform: scale(1.02);
+}
+
+.endereco{
+    width: 100%;
+    height: 60%;
+}
+
+.escrita{
+    color:#fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+
+.alegre{
+    font-size: 18px;
+}
+
+.alegres{
+    font-size: 15px;
+}
+
+.boxdoistaphouse{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.fototaphouse {
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/taphouse.jpg);
+    transition: 1s;
+    border-radius: 10%;
+    background-position: 50% 50%;
+}
+
+.blocotaphouse{
+    width: 90%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+
+.fotinhas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+
+footer {
+    height: 100px;
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logof{
+    height: 70px;
+}
+
+span {
+    color:#fff;
+    font-size: 10px;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CERVEJAS */
+
+.fotos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fotinhas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.foto-1 {
+    background-image: url('./assets/cerveja1.jpg')
+}
+
+.foto-2 {
+        background-image: url('./assets/cerveja2.jpg');
+}
+
+.foto-3 {
+        background-image: url('./assets/cerveja3.jpg');
+}
+
+.foto-4 {
+        background-image: url('./assets/cerveja4.jpg');
+}
+
+.foto-5 {
+        background-image: url('./assets/cerveja5.jpg');
+}
+
+.foto-6 {
+        background-image: url('./assets/cerveja6.jpg');
+}
+
+.foto-7 {
+    background-image: url('./assets/cerveja7.jpg');
+}
+
+.foto-8 {
+    background-image: url('./assets/cerveja8.jpg');
+}
+
+.foto-9 {
+    background-image: url('./assets/cerveja9.jpg');
+}
+
+.foto-10 {
+    background-image: url('./assets/cervejadez.jpg');
+}
+
+.tabaco-1{
+    background-image: url('./assets/tabacaria1.jpg');
+}
+
+.tabaco-2{
+    background-image: url('./assets/tabacaria2.jpg');
+}
+
+.tabaco-3{
+    background-image: url('./assets/tabacaria3.jpg');
+}
+
+.tabaco-4{
+    background-image: url('./assets/tabacaria4.jpg');
+}
+
+.tabaco-5{
+    background-image: url('./assets/tabacaria5.jpg');
+}
+
+.tabaco-6{
+    background-image: url('./assets/tabacaria6.jpg');
+}
+
+.tabaco-7{
+    background-image: url('./assets/tabacaria7.jpg');
+}
+
+.tabaco-8{
+    background-image: url('./assets/tabacaria8.jpg');
+}
+
+.cafe-1 {
+    background-image: url('./assets/cafe1.jpg')
+}
+
+.cafe-2 {
+    background-image: url('./assets/cafe2.jpg')
+}
+
+.cafe-3 {
+    background-image: url('./assets/cafe3.jpg')
+}
+
+.cafe-4 {
+    background-image: url('./assets/cafe4.jpg')
+}
+
+.cafe-5 {
+    background-image: url('./assets/cafe5.jpg')
+}
+
+.cafe-6 {
+    background-image: url('./assets/cafe6.jpg')
+}
+
+.insumo-1 {
+    background-image: url('./assets/insumo1.jpg')
+}
+
+.insumo-2 {
+    background-image: url('./assets/insumo2.jpg')
+}
+
+.insumo-3 {
+    background-image: url('./assets/insumo3.jpg')
+}
+
+.insumo-4 {
+    background-image: url('./assets/insumo4.jpg')
+}
+
+.insumo-5 {
+    background-image: url('./assets/insumo5.jpg')
+}
+
+.insumo-6 {
+    background-image: url('./assets/insumo6.jpg')
+}
+
+.comida-1 {
+    background-image: url('./assets/comidinha1.jpg')
+}
+
+.comida-2 {
+    background-image: url('./assets/comidinha2.jpg')
+}
+
+.comida-3 {
+    background-image: url('./assets/comidinha3.jpg')
+}
+
+.comida-4 {
+    background-image: url('./assets/comidinha4.jpg')
+}
+
+.comida-5 {
+    background-image: url('./assets/comidinha5.jpg')
+}
+
+.comida-6 {
+    background-image: url('./assets/comidinha6.jpg')
+}
+
+.comida-7 {
+    background-image: url('./assets/comidinha7.jpg')
+}
+
+.comida-8 {
+    background-image: url('./assets/comidinha8.jpg')
+}
+
+.cardf {
+    width: 85%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: grid;
+    justify-content: flex-end;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.cardf:hover{
+    transform: scale(1.02);
+}
+
+.conheca{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.boxfun{
+    width: 100%;
+    height: 65px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.blocofun{
+    width: 100%;
+    height: 65px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.blocofun2{
+    width: 100%;
+    height: 65px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.blocofuntaphouse{
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.funcionamento1 {
+    display: flex;
+    justify-content: center;
+}
+
+.funcionamento2 {
+    display: flex;
+    justify-content: center;
+}
+
+.funcionamento3 {
+    display: flex;
+    justify-content: center;
+}
+
+.func {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+.horas {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;   
+}
+
+.telefone{
+    display: flex;
+    justify-content: center;
+}
+
+.telefonec{
+    display: flex;
+    justify-content: center;
+}
+
+.contato{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+.contato2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 17px;
+}
+
+@media(max-width: 768px){
+
+    header {
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav {
+        width: 70%;
+        justify-content: space-between;
+        
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    #frasesloja {
+        border: 2px solid white;
+    }
+
+    .blocodois{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .fotodois{
+        width: 100%;
+        background-image: url(./assets/imgresponsiva.jpg);
+        transition: 1s;
+        background-position: 40% 60%;
+        border-radius: 10%;
+    }
+
+    .blocotaphouse{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .fototaphouse{
+        width: 100%;
+        background-image: url(./assets/taphouse.jpg);
+        transition: 1s;
+        border-radius: 10%;
+    }
+
+    .blocofuntaphouse{
+        margin-top: 200px;
+    }
+
+    .endereco{
+        width: 90%;
+
+    }
+
+    .boxdois{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        margin-top: 65px;
+    }
+
+    footer {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    #taphouse{
+        font-size: 20px;
+    }
+
+    #loja{
+        font-size: 15px;
+    }
+
+    .fotinhas{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+        column-gap: 0px;
+    }
+
+    .cardf {
+        width: 90%;
+        height: 300px;    
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5px;
+        margin-left: 4px;
+    }
+
+    .blocofun {
+        margin-top: 90px;
+    }
+}
